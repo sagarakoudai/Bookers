@@ -1,0 +1,22 @@
+<h1>Books</h1>
+
+<div class="columns">
+  <p>Title</p>
+  <p>Body</p>
+</div>
+
+
+<% @books. each do |book| %>
+  <div class="main books-index">
+    <%= book.title %>
+    <%= book.body %>
+    <%= link_to("Show","/books/#{book.id}") %>
+    <span>Edit</span>
+    <span>Destroy</span>
+  </div>
+<% end %>
+
+<h2>New book</h2>
+<p>Title</p>
+<p>Body</p>
+<p>Create Book</p>
