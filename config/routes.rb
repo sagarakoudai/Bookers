@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get '/' => 'homes#top'
 
   get '/index' => 'books#index'
+  post '/books/create' => 'books#create'
 
   get '/books/:id' => 'books#show'
+
 end
