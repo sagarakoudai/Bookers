@@ -5,18 +5,18 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find_by(id: params[:id])
+    @book = Book.find(params[:id])
   end
 
   def create
-    @book = Book.new(title: params[:title], body: params[:body])
+    @book = Book.new(book_params)
     @book.save
     redirect_to("/books/:id")
   end
 
   private
     def book_params
-      params.permit(:title, :body)
+      params.require(:book).permit(:title, :body)
     end
 
 end

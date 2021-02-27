@@ -16,11 +16,11 @@
   </div>
 <% end %>
 
-<%= form_tag("/books/create") do %>
+<%= form_with model: @book, url:'/books', local: true do |f| %>
   <h2>New book</h2>
   <p>Title</p>
-  <textarea name="title"></textarea>
+  <%= f.text_field :title %>
   <p>Body</p>
-  <textarea name="body"></textarea>
-  <input type="submit" value="Create Book">
+  <%= f.text_field :body %>
+  <%= f.submit "Create Book" %>
 <% end %>
