@@ -10,8 +10,8 @@
   <div class="main books-index">
     <%= book.title %>
     <%= book.body %>
-    <%= link_to("Show","/books/#{book.id}") %>
-    <%= link_to("Edit","/books/#{book.id}/edit") %>
+    <%= link_to "Show", book_path(book.id) %>
+    <%= link_to "Edit", edit_book_path(book.id) %>
     <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "are you sure?" %>
   </div>
 <% end %>
