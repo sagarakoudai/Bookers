@@ -3,6 +3,6 @@
 <%= @book.title %>
 <P><%= @book.body %></p>
 
-<span>Edit</span>
+<%= link_to("Edit","/books/#{@book.id}/edit") %>
 <span>|</span>
-<%= link_to("Back","/index") %>
+<%= link_to("Back","/books") %>

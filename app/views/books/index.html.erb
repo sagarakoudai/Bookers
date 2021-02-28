@@ -11,8 +11,8 @@
     <%= book.title %>
     <%= book.body %>
     <%= link_to("Show","/books/#{book.id}") %>
-    <span>Edit</span>
-    <span>Destroy</span>
+    <%= link_to("Edit","/books/#{book.id}/edit") %>
+    <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "are you sure?" %>
   </div>
 <% end %>
 
