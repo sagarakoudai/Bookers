@@ -1,11 +1,13 @@
-<p>投稿詳細</p>
-
-<div class="success" id="notice">
- <%= notice %>
+<div class="show">
+<p>
+ <spam>Title:</spam>
+ <%= @book.title %>
+</p>
+<p>
+ <spam>Body:</spam>
+ <%= @book.body %>
+</p>
 </div>
-
-<p><%= @book.title %></p>
-<P><%= @book.body %></p>
 
 <%= link_to "Edit", edit_book_path(@book.id) %>
 <span>|</span>

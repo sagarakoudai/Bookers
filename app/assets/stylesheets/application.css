@@ -16,3 +16,25 @@
 .success {
   color: green;
 }
+
+/*top*/
+.top_about {
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+
+/*index*/
+tb { 
+  margin-left: 50px;
+}
+
+/*show*/
+
+.show {
+  margin: 40px 50px;
+}
+
+.show spam {
+  font-weight: 600;
+}
