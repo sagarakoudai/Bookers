@@ -1,6 +1,10 @@
 <p>投稿詳細</p>
 
-<%= @book.title %>
+<div class="success" id="notice">
+ <%= notice %>
+</div>
+
+<p><%= @book.title %></p>
 <P><%= @book.body %></p>
 
 <%= link_to "Edit", edit_book_path(@book.id) %>
