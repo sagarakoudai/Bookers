@@ -91,6 +91,11 @@ label {
     line-height: 20px;
 }
 
+a:hover {
+  color: white;
+  background-color: black;
+}
+
 /*show*/
 
 .show {
