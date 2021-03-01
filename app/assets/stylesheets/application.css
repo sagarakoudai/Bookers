@@ -17,6 +17,10 @@
   color: green;
 }
 
+body {
+  margin: 30px;
+}
+
 /*top*/
 .top_about {
   padding-left: 50px;
@@ -25,8 +29,33 @@
 
 
 /*index*/
-tb { 
-  margin-left: 50px;
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 20px 7px;
+  border-color: grey;
+  font-size: 14px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.new {
+  margin-left: 10px;
 }
 
 /*show*/
